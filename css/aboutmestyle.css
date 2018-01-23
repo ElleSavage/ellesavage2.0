@@ -1,0 +1,114 @@
+	
+*{
+box-sizing: border-box;
+}
+
+html{
+	font-size: 100%
+}
+
+#logo{
+    margin: auto;
+    width: 15%;
+    border: 5px;
+    padding: 20px;
+    display: block;
+}
+
+ul,li,a{
+    display:inline; /*this makes the nav bar horitzontal instead of a verticle list */
+    color:#8B3D5F;
+    padding: 30px /*this determine the space between menu items*/ 
+}
+
+#navbar{
+    list-style: none;
+    font-family:'roboto',sans-serif;
+    margin:auto;
+    width:100%;
+    display:inline-block;
+    text-align:center;
+}
+
+a{
+    text-decoration: none; /*this will remove the underline from hyperlinks*/
+}
+
+a:hover{
+    color:#f6c2e7;
+}
+
+h1{
+	font-size: 200%;
+	font-weight:bold;
+	text-align:center;
+    font-family: 'Rochester', cursive; /*have to use <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=font+name" in HTML to have google
+    fonts load*/ 
+ 
+}
+
+h2{
+    color: #8B3D5F;
+    font-size: 130%;
+    font-weight: bold;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    padding-top:25px; 
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#header{
+    margin: auto;
+    width: 75%;
+    border: 3px;
+    padding: 10px;
+    display: block;
+}
+
+#aboutbody{
+    margin:auto;
+    border: 15px;
+    display:block;
+    width:1000px;
+}
+
+footer{
+    background-color:#f6c2e7;
+    margin:auto;
+    width:90%;
+    height:150px;
+    padding:1px;
+}
+
+.socialmedia{
+    display:inline-block;
+    width:3%;
+    margin:auto;
+}
+
+#socialmedia{
+    display:block;
+    color:#8B3D5F;
+    font-family:'roboto', sans-serif;
+    font-weight:bold;
+    margin:auto;
+    width:90%;
+    text-align:center;
+}
+
+#footerinfo{
+    color:#8B3D5F;
+    display:block;
+    font-weight:bold;
+    margin:auto;
+    text-align:center;
+    font-style:italic;
+    width:90%;
+    line-height: 30%
+}
+

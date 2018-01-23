@@ -1,0 +1,54 @@
+*{
+box-sizing: border-box;
+}
+
+html{
+	font-size: 100%;
+}
+
+body {
+	background-image: url("images/homebg.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+ul li a{
+	display: inline-block;
+	padding:1.25rem 2rem; /*this determine the space between 
+	menu items*/ 
+	text-decoration: none;
+}
+
+
+a{
+	color:white;
+    text-decoration: none; /*this will remove the underline from hyperlinks*/ 
+}
+
+a:hover{
+    color:#f6c2e7;
+}
+
+#mantra{
+	background:#4F2141;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-size:110%;
+	left:765px;
+	max-width: 435px;
+	padding: 10px;
+	position:relative;
+	top:475px;
+}
+
+#welcome{
+	background:#4F2141;
+	font-family: 'Roboto', sans-serif;
+	font-size:125%;
+	left:975px;
+	max-width: 225px;
+	padding: 10px;
+	position:relative;
+	top:490px;
+	
+}

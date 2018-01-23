@@ -1,0 +1,101 @@
+*{
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+html{
+	font-size: 100%
+}
+
+ul,li,a{
+    text-decoration: none; /*removes unerline from links*/ 
+}
+
+body{
+    max-width:100%;
+    padding:0px 75px;
+}
+
+#body{
+    margin:auto;
+    width:100%;
+    padding:10px;
+}
+
+#logo{
+    margin: auto;
+    width: 15%;
+    border: 3px;
+    padding: 10px;
+    display: block;
+}
+
+
+#navbar{
+    font-family:'roboto',sans-serif;
+    margin:auto;
+    width:200%;
+    text-align:center;
+    display:inline;
+}
+
+
+.nav{
+    display:inline; /*this makes the nav bar horitzontal instead of a verticle list */
+    color:#8B3D5F;
+    list-style: none;
+    padding: 60px /*this determine the space between menu items*/ 
+}
+
+
+#edparent{
+    display:flex; /*used this instead of inline-block because
+    #goright wasn't lining up next to the #education container;
+    This display setting makes the rest of the container filled*/
+    width:100%;
+}
+
+
+#education{
+    list-style: none; /*removes bullets*/ 
+    width:875px;
+}
+
+#goright{
+    flex:1; /*this when used with the parent rule (display:flex)
+    will make the #goright container fill the screen where the 
+    #education doesnt */ 
+    list-style:none;
+    text-align: right;
+}
+
+
+a:hover{
+    color:#f6c2e7;
+}
+
+
+a{
+    text-decoration: none; /*this will remove the underline from hyperlinks*/ 
+    color:#8B3D5F;
+}
+
+
+.contact{
+    display:inline-block; /*makes this line up next to the other items in a rox */
+    width:33%; 
+    margin:auto;
+    font-size:125%;
+}
+
+h1{
+	font-size: 150%;
+	font-weight:bold;
+	text-align:center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+h4, h6{
+    font-weight: normal; /*lists were showing up bold*/
+}
+
