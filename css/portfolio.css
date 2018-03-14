@@ -60,6 +60,7 @@ h1{
     padding:20px;
     color:white;
     background-color:#8B3D5F;
+    display:flex;
 }
 
 .post{

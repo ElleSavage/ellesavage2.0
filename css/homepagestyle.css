@@ -4,13 +4,42 @@ box-sizing: border-box;
 
 html{
 	font-size: 100%;
+	  background: url(../images/homebg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; /*solution found on web to make image
+  background responsive - still need to figure out how to change rez in css*/ 
 }
 
-body {
-	background-image: url("images/homebg.jpg");
+
+
+/* body {
+	background-image: url("../images/homebg.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
+
+	this is the code used for background before; can't figure out
+	how to get responsive bkgd
+} */
+
+
+  /* found this tip online to create a responsive background;
+  still need to add other, lower res images*/ 
+
+
+/* 
+@media (min-width: 960px) {
+/*set tablet rules here*/ 
+}	
+
+/*
+@media screen and (max-width: 560px) {
+	background-image: url("../images/homebg-mobile.jpg")
+	/*set mobile rules here */ 
 }
+
+
 
 ul li a{
 	display: inline-block;
@@ -18,7 +47,7 @@ ul li a{
 	menu items*/ 
 	text-decoration: none;
 }
-
+ 
 
 a{
 	color:white;
@@ -27,28 +56,76 @@ a{
 
 a:hover{
     color:#f6c2e7;
+    cursor: pointer;
 }
 
-#mantra{
+.welcome{
+	display:flex;
+	align-items: flex-end;
+	flex-direction:column;
+	margin-right:.5rem;
+	margin-top:30rem;
+
+}
+.mantra{
 	background:#4F2141;
 	font-family: 'Roboto', sans-serif;
 	color:white;
 	font-size:110%;
-	left:765px;
-	max-width: 435px;
-	padding: 10px;
-	position:relative;
-	top:475px;
+	max-width: 28rem;
+	padding: 0.6rem;
 }
 
-#welcome{
+button{
 	background:#4F2141;
 	font-family: 'Roboto', sans-serif;
-	font-size:125%;
-	left:975px;
-	max-width: 225px;
-	padding: 10px;
-	position:relative;
-	top:490px;
-	
+	font-size:110%;
+	max-width: 15rem;
+	padding: 0.5rem;
+	display:flex;
+	justify-content:flex-end;
+	border:none; /*get rid of the border box around a button*/
+	flex-direction:column;
+}
+
+@media screen and (max-width: 580px) { /* Specific to this particular image */
+  .mantra{
+    position:fixed;
+    top:0;
+    max-width:580px;
+    text-align: center;
+    font:150%;
+    word-wrap: wrap;
+    opacity: 0.8
+  }
+  	/*have to refresh the page before text wraps and appears 
+  	centered...why??*/ 
+
+
+  .enter{
+  	position:fixed;
+  	bottom:0;
+    text-align:center;
+    font:250%;
+    width:100%;
+    max-width: 580px;
+  }
+
+  .button{
+  	width:100%;
+  	padding:1rem 1rem 1rem 2rem;
+  	position:fixed;
+  	bottom:0;
+ 	max-width: 580px;
+ 	text-align:center;
+ 	opacity:0.8;
+  }
+
+  /*why is this div not filling the entire screen?*/
+
+  a{
+  	text-align: center;
+  	width:100%;
+  }
+
 }

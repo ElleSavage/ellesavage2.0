@@ -6,23 +6,24 @@
 
   <meta charset='UTF-8'> 
   <title>Elle Savage's Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--read online that this is important to get media queries to work -->
 
-  <link rel='stylesheet' href='blog.css'>
+  <link rel='stylesheet' href='../css/blog.css'>
  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rochester'> 
 
 </head>
 
 <body>
 
-<img src='savlogo.png' alt='Savage cursive logo' id='logo'>
+<img src='../images/savlogo.png' alt='Savage cursive logo' id='logo'>
 
 	<div id='navbar'> 
 		<nav> 
 			<ul>
-				<li> <a href='about-me.html'> About Me </a> </li>
+				<li> <a href='aboutme.html'> About Me </a> </li>
 				<li> <a href='resume.html'> My Resume </a> </li>
-				<li> <img src='images/logo2.png' alt='flowers computer mouse and paint brush'></li>
-				<li> <a href='portfolio.html'> Portfolio </a> </li>
+				<li> <img src= '../images/logo2.png' alt='flowers computer mouse and paint brush' id='logo2'></li>
+				<li> <a href='responsive-portfolio.html'> Portfolio </a> </li>
 				<li><a href='blog.html'> Blog </a> </li>
 			</ul>
 		</nav>
@@ -33,11 +34,18 @@
 <main id='blogbody'>
 
 	<div class='post'>
+		<!--<img src='../images/banner.png' alt='title banner' a href='aiarticle.html' class='banner'>  -->
+
+		<div class='banner'>
 		<h2>The Future of Artifical Intelligence</h2>
-			<img src='images/ai.png' alt= 'artificial intelligence image' class='coverpic'>
-				<p>Published October 27, 2017</p>
-				<p>Artificial intelligence has been a long-time favorite topic of science fiction, making appearances in popular novels and movies dating back to 1950. Though the term “artificial intelligence” was not coined until 1956, the concept was introduced six years early by Alan Turing when he asked, “can machines think?” At this time, computers were only just being introduced to the world, so, self-admittedly, Turing did not have anything to back his curiosity (Sharkey, 2012). Now, over half a century later, the question has shifted; it is no longer “can artificial intelligence exist,” but “when will artificial intelligence become ubiquitous?” ... </p>
-			
+		</div>
+
+			<div class='text'>
+			<img src='../images/ai.png' alt= 'artificial intelligence image' class='coverpic'>
+				<p class='date'>Published October 27, 2017</p>
+				<p class='maintext'>Artificial intelligence has been a long-time favorite topic of science fiction, making appearances in popular novels and movies dating back to 1950. Though the term “artificial intelligence” was not coined until 1956, the concept was introduced six years early by Alan Turing when he asked, “can machines think?” At this time, computers were only just being introduced to the world, so, self-admittedly, Turing did not have anything to back his curiosity (Sharkey, 2012). Now, over half a century later, the question has shifted; it is no longer “can artificial intelligence exist,” but “when will artificial intelligence become ubiquitous?” ... </p>
+			</div>
+
 				<div class='button'>
 					<a href='aiarticle.html' class='readmore'> Read More </a>
 				</div>
@@ -45,13 +53,16 @@
 
 	<div class='post'>
 		
-		<h2>My Thoughts on Global Warming</h2>
-			
-			<img src='images/globalwarming.png' alt='image of Earth' class='coverpic'>
-			
-			<p>Published September 19, 2017 </p>
 
-			<p>This may be a touchy topic, but something I feel very passionate about is protecting our planet. It is sad to me that this topic has turned into a political and economic debate, especially considering the alarming rate that climate change is occurring. During a friendly debate recently, I brought up how concerned I was that the climate would become unlivable within the lives of the next generation. For me, I think about my young niece and nephew who are too young to have a voice, but who will inherit a planet with extreme heat, erratic and violent storms, dirtier air, and higher levels of insect spread diseases ... </p>
+		<div class='banner'>
+		<h2>My Thoughts on Global Warming</h2>
+		</div>
+
+			<img src='../images/globalwarming.png' alt='image of Earth' class='coverpic'>
+			
+			<p class='date'>Published September 19, 2017 </p>
+
+			<p class='maintext'>This may be a touchy topic, but something I feel very passionate about is protecting our planet. It is sad to me that this topic has turned into a political and economic debate, especially considering the alarming rate that climate change is occurring. During a friendly debate recently, I brought up how concerned I was that the climate would become unlivable within the lives of the next generation. For me, I think about my young niece and nephew who are too young to have a voice, but who will inherit a planet with extreme heat, erratic and violent storms, dirtier air, and higher levels of insect spread diseases ... </p>
 			
 			<div class='button'>
 				<a href='globalwarming.html' class='readmore'> Read More </a>
@@ -59,11 +70,14 @@
 	</div>
 
 	<div class='post'>
+
+		<div class='banner'>
 		<h2>Striking a Balance</h2>
-			<img src="images/balance.png" alt='yoga tree pose cartoon' class='coverpic'>
+	</div>
+			<img src="../images/balance.png" alt='yoga tree pose cartoon' class='coverpic'>
 			
-			<p> Published March 3, 2017 </p>
-			<p>While searching for an internship to pursue, I struggled to cut my resume down from three pages to just one. Before I joined the EY Intuitive team, I worked a part-time job twenty hours a week on top of being a research assistant to a PhD student, took on a full course load, sat on two executive boards, facilitated a “Lean In circle,” was elected President of a student organization, joined an honors fraternity, and volunteered as an event coordinator for a large charity event ...</p>
+			<p class='date'> Published March 3, 2017 </p>
+			<p class='maintext'>While searching for an internship to pursue, I struggled to cut my resume down from three pages to just one. Before I joined the EY Intuitive team, I worked a part-time job twenty hours a week on top of being a research assistant to a PhD student, took on a full course load, sat on two executive boards, facilitated a “Lean In circle,” was elected President of a student organization, joined an honors fraternity, and volunteered as an event coordinator for a large charity event ...</p>
 					
 			<div class='button'>
 				<a href='balancearticle.html' class='readmore'> Read More </a>
@@ -71,28 +85,75 @@
 	</div>
 
 <div class='post'>
+
+		<div class='banner'>
 		<h2>Impact of Social Media on Adolescent's Development and Esteem</h2>
-			<img src='images/socialmedia.png' alt='social media logos' class='coverpic'>
-				<p>Published June 2, 2016</p>
-				<p>Social Media is “’the use of technology combined with social interaction to create or co-create value.” However, scholars are constantly adjusting this definition as the tools, technologies, trends and popular social media sites continue to change at a rapid pace (Pavlik).  However, if you asked a teenager: “what is social media?” their response would likely be to list the several social media sites that they use.  Ten years ago, social media wasn’t even on the map, but today, 71% of teenagers use more than one social network site, the most popular being: Facebook, Instagram, Snapchat, Twitter, Google Plus, Vine, and Tumblr, just to name a few (Lenhart). Constantly being drawn to these various social media platforms has proven to have a large impact on how teenagers are developing. In addition to creating sleep issues, the ubiquitous nature of social media today has impacted adolescent’s mental health, self-esteem, and cognitive development ...</p>
+		</div>
+
+			<img src='../images/socialmedia.png' alt='social media logos' class='coverpic'>
+				<p class='date'>Published June 2, 2016</p>
+				<p class='maintext'>Social Media is “’the use of technology combined with social interaction to create or co-create value.” However, scholars are constantly adjusting this definition as the tools, technologies, trends and popular social media sites continue to change at a rapid pace (Pavlik).  However, if you asked a teenager: “what is social media?” their response would likely be to list the several social media sites that they use.  Ten years ago, social media wasn’t even on the map, but today, 71% of teenagers use more than one social network site, the most popular being: Facebook, Instagram, Snapchat, Twitter, Google Plus, Vine, and Tumblr, just to name a few (Lenhart). Constantly being drawn to these various social media platforms has proven to have a large impact on how teenagers are developing. In addition to creating sleep issues, the ubiquitous nature of social media today has impacted adolescent’s mental health, self-esteem, and cognitive development ...</p>
 					<div class='button'>
 						<a href='socialmediaarticle.html' class='readmore'> Read More </a>
 					</div>
 	</div>
 
 <div class='post'>
+
+		<div class='banner'>
 		<h2>The Beginning of Advertising As We Know It</h2>
-			<img src='images/ads.png' alt='advertising image' class='coverpic'>
-				<p>Published on February 25, 2016</p>
-				<p>The documentary Century of the Self focused on two people who greatly influenced advertising as we know it today: Sigmund Freud and his nephew, Edward Bernays. Freud is most well known for his belief in primitive sexual and aggressive forces hidden in minds that trace back to our animal instincts. The idea of a subconscious is now a well-accepted theory, but during Freud’s time, leaders saw the idea as very threatening. Having feelings were deemed as weak and societies across the globe had yet to accept the possibility of being able to control something as powerful as one’s subconscious. Freud also introduced psychoanalysis as a tool to better understand what people feel and what their primary value and reality assumptions were. Instead of fearing us because of our emotional subconscious like Freud did, advertisers today have learned how to target us using his ideas ...</p>
+	</div>
+			<img src='../images/ads.png' alt='advertising image' class='coverpic'>
+				<p class='date'>Published on February 25, 2016</p>
+				<p class='maintext'>The documentary Century of the Self focused on two people who greatly influenced advertising as we know it today: Sigmund Freud and his nephew, Edward Bernays. Freud is most well known for his belief in primitive sexual and aggressive forces hidden in minds that trace back to our animal instincts. The idea of a subconscious is now a well-accepted theory, but during Freud’s time, leaders saw the idea as very threatening. Having feelings were deemed as weak and societies across the globe had yet to accept the possibility of being able to control something as powerful as one’s subconscious. Freud also introduced psychoanalysis as a tool to better understand what people feel and what their primary value and reality assumptions were. Instead of fearing us because of our emotional subconscious like Freud did, advertisers today have learned how to target us using his ideas ...</p>
 			
 			<div class='button'>
 				<a href='adarticle.html' class='readmore'> Read More </a>
 			</div>
+
+
+	</div>
+
+</main>
+
+
+<footer id="footer">
+
+	
+	<div class='footercontainer'>
+	<div class='footer'>
+		<img src= '../images/heysocial.png' alt='arrow pointing down' id='arrow'> 
+	</div>
+	</div>
+
+	<div class='footercontainer'>
+		<div class='socialmedia'>
+	
+		<img src='../images/linkedin.png' alt='linkedin logo' a href='https://www.linkedin.com/in/ellesavage' target='_blank' class='icon'>
+			<!-- this _blank makes links open in new tabs-->
+
+		<img src='../images/insta.png' alt='instagram logo' class='icon' a href='https://www.instagram.com/215ellesavage' target='_blank'> 
+		
+	
+		<img src='../images/facebook.png' alt='facebook logo' a href=https://'www.facebook.com/itsellesavage' target='_blank' class='icon'> 
+		
+		</div>
+	</div>
+
+<div class='col'></div>
+
+	<div id=footerinfo>
+
+		<p> <b> "If you're offered a seat on a Rocketship, you don't ask 'which seat?'" -Sheryl Sandberg </b></p>
+
+		<img src='../images/footerroses.png' alt='roses' id='footerroses'>
+
+	<p id='tag'> This site was made with love by Elle Savage using HTML and CSS</p>
+
 	</div>
 
 
 
-</main>
+</footer>	
 
 

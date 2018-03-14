@@ -1,4 +1,4 @@
-	
+
 *{
 box-sizing: border-box;
 }
@@ -7,13 +7,52 @@ html{
 	font-size: 100%
 }
 
+
+h1{
+    font-size: 200%%;
+    font-weight:bold;
+    text-align:center;
+    font-family: 'Rochester', cursive;
+}
+
+#portfolio{
+	display:flex;
+	flex-flow: row-wrap;
+}
+
 #logo{
     margin: auto;
-    width: 15%;
-    border: 5px;
-    padding: 20px;
+    width: 20%;
+    border: 0.2rem;
+    padding: 1.2rem;
     display: block;
 }
+
+
+
+
+#portfolio{
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	flex-flow: column-wrap;
+  overflow: none;
+  justify-content: space-between;
+}
+
+.container{
+  flex:1;
+  padding:0.5rem;
+  display: flex;
+  flex-grow:1;
+  flex-wrap: wrap;
+}
+
+.image{
+  justify-content: space-between;
+}
+
+/*begin responsive menu code */ 
 
 #navbar, ul,li,a{
    display: flex;
@@ -29,8 +68,8 @@ html{
 }
 
 #navbar{
-    margin:auto;
-    width:100%;
+	margin:auto;
+	width:100%;
 }
 
 #navbar a{
@@ -42,44 +81,53 @@ html{
     color:#f6c2e7;
 }
 
-h1{
-	font-size: 250%;
-	font-weight:bold;
-	text-align:center;
-    font-family: 'Rochester', cursive; /*have to use <link rel="stylesheet" 
-    href="https://fonts.googleapis.com/css?family=font+name" in HTML to have google
-    fonts load*/ 
- 
+/*end responsive menu code */ 
+
+.container {
+    position: relative;
+    width: 50%;
+    display:flex;
+    flex-flow:row;
+}
+/*animation for image overlay starts here*/ 
+.image {
+  opacity: 1;
+  display: flex;
+  flex-flow:row-wrap;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 0.1rem solid #8B3D5F;
 }
 
-h2{
-    color: #8B3D5F;
-    font-size: 130%;
-    font-weight: bold;
-    text-align:center;
-    font-family: 'Roboto', sans-serif;
-    padding-top:2rem; 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
+.container:hover .image {
+  opacity: 0.3;
 }
 
-
-#header{
-    margin: auto;
-    width: 75%;
-    border: 0.4rem;
-    padding: 0.75rem;
-    display: block;
+.container:hover .middle {
+  opacity: 1;
 }
 
-#aboutbody{
-    margin:auto;
-    border:1rem;
-    display:block;
-    width:65%;
+.text {
+  background-color: #8B3D5F;
+  color: white;
+  font-size: 100%;
+  padding: 1rem 2rem;
 }
+
+/*animation for overlay code ends here */ 
+
+/*working footer code starts here!*/ 
 
 #footer{
   position:relative;
@@ -122,7 +170,7 @@ p{
   display: block;
 }
 
-#footerinfo{
+#footerinfo, p{
     color: #f6c2e7;
     display:inline-block;
     margin:auto;
@@ -144,14 +192,10 @@ p{
   width: auto;
 }
 
-@media screen and (max-width: 580px){
+/*footer code ends here */ 
 
-  #blogbody{
-    width:95%;
-  }
-
-
-   /*responsive menu code starts here*/ 
+@media screen and (max-width:580px) {
+    /*responsive menu code starts here*/ 
     #logo2{
         display:none;
     }
@@ -177,4 +221,7 @@ p{
    }
    /*end footer media query*/
 }
-}
+
+
+ /* have to move media queries to end so that the noraml css
+ rules still apply*/

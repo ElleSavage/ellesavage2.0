@@ -7,7 +7,7 @@
   <meta charset='UTF-8'> 
   <title>About Me</title>
 
-  <link rel='stylesheet' href='aboutmestyle.css'>
+  <link rel='stylesheet' href='../css/aboutmestyle.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rochester'> 
  
 
@@ -15,15 +15,15 @@
 
 <body>
 
-<img src='savlogo.png' alt='Savage cursive logo' id='logo'>
+<img src='../images/savlogo.png' alt='Savage cursive logo' id='logo'>
 
 	<div id='navbar'> 
 		<nav> 
 			<ul>
 				<li> <a href='aboutme.html'> About Me </a> </li>
 				<li> <a href='resume.html'> My Resume </a> </li>
-				<li> <img src='images/logo2.png' alt='flowers computer mouse and paint brush'></li>
-				<li> <a href='portfolio.html'> Portfolio </a> </li>
+				<li> <img src='../images/logo2.png' alt='flowers computer mouse and paint brush'></li>
+				<li> <a href='responsive-portfolio.html'> Portfolio </a> </li>
 				<li><a href='blog.html'> Blog </a> </li>
 			</ul>
 		</nav>
@@ -31,9 +31,9 @@
 
 	<h1> About Me </h1> 
 
-	<img src='images/aboutheader.jpeg' alt='Photo of Elle Savage' id=header> 	
+	<img src='../images/aboutheader.jpeg' alt='Photo of Elle Savage' id=header> 	
 
-<div id='aboutbody'>
+<main id='aboutbody'>
 
 <h2> MY MANTRA: IF YOU WORK HARD AND YOU ARE NICE TO PEOPLE, GOOD THINGS WILL HAPPEN.</h2>
 
@@ -49,32 +49,47 @@
 
 <p>So far, I’ve discovered that I am a hiker, photographer, writer, marketer, web developer, graphic designer, painter, drawer, and professional. This website represent my personal and professional portfolios and experiences. Please feel free to find my contact information on my contact me page and reach out! </p>
 
-</div>
+</main>
 
 </body>
 
-<footer>
-	<div id=socialmedia>
-		<p>Hey! I'm Social!</p>
-		<p>
-			<a href='https://www.linkedin.com/in/ellesavage' target='_blank'>
-			<img src='images/linkedin.png' alt='linkedin logo' class='socialmedia'>
-			</a>
+<footer id="footer">
 
-			<a href='https://www.instagram.com/215ellesavage' target='_blank'>
-			<img src='images/insta.png' alt='instagram logo' class='socialmedia'></a>
-
-			<a href=https://'www.facebook.com/itsellesavage' target='_blank'>
-			<img src='images/facebook.png' alt='facebook logo' class=socialmedia>
-			</a>
-		</p>
+	
+	<div class='footercontainer'>
+	<div class='footer'>
+		<img src= '../images/heysocial.png' alt='arrow pointing down' id='arrow'> 
 	</div>
+	</div>
+
+	<div class='footercontainer'>
+		<div class='socialmedia'>
+	
+		<img src='../images/linkedin.png' alt='linkedin logo' a href='https://www.linkedin.com/in/ellesavage' target='_blank' class='icon'>
+			<!-- this _blank makes links open in new tabs-->
+
+		<img src='../images/insta.png' alt='instagram logo' class='icon' a href='https://www.instagram.com/215ellesavage' target='_blank'> 
+		
+	
+		<img src='../images/facebook.png' alt='facebook logo' a href=https://'www.facebook.com/itsellesavage' target='_blank' class='icon'> 
+		
+		</div>
+	</div>
+
+
 	<div id=footerinfo>
-		<p>"If you're offered a seat on a Rocketship, you don't ask 'which seat?'" </p>
 
-		<p>-Sheryl Sandberg</p>
+		<p> <b> "If you're offered a seat on a Rocketship, you don't ask 'which seat?'" -Sheryl Sandberg </b></p>
+
+		<img src='../images/footerroses.png' alt='roses' id='footerroses'>
+
+	<p id='tag'> This site was made with love by Elle Savage using HTML and CSS</p>
+
 	</div>
-</footer>
+
+
+
+</footer>	
 
 
 </html>
