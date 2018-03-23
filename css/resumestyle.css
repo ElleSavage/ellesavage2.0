@@ -1,3 +1,9 @@
+/*NOTES:
+Dark purple color:#8B3D5F;  
+Light pink color: #f6c2e7;
+font-families: 'Rochester';
+*/ 
+
 *{
 box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
@@ -7,13 +13,16 @@ html{
 	font-size: 100%
 }
 
-ul,li,a{
-    text-decoration: none; /*removes unerline from links*/ 
+h1{
+    font-family: 'Rochester', cursive;
+    margin:auto;
+    width:6rem;
 }
 
+
 body{
-    max-width:100%;
-    padding:0px 75px;
+    max-width:85%;
+    margin:auto;
 }
 
 #body{
@@ -30,72 +39,235 @@ body{
     display: block;
 }
 
+#navbar, #nav, .nav{
+   display: flex;
+   flex-flow:row;
+    color:#8B3D5F;
+    font-family:'roboto',sans-serif;
+    padding: 0.5rem; /*this determine the space between menu items*/ 
+    justify-content: center;
+    list-style:none;
+    align-items: center; /*this center the content in the div, not the div itself */ 
+    text-decoration: none;
+    text-align:center;
+}
 
 #navbar{
-    font-family:'roboto',sans-serif;
     margin:auto;
-    width:200%;
-    text-align:center;
-    display:inline;
-}
-
-
-.nav{
-    display:inline; /*this makes the nav bar horitzontal instead of a verticle list */
-    color:#8B3D5F;
-    list-style: none;
-    padding: 60px /*this determine the space between menu items*/ 
-}
-
-
-#edparent{
-    display:flex; /*used this instead of inline-block because
-    #goright wasn't lining up next to the #education container;
-    This display setting makes the rest of the container filled*/
     width:100%;
 }
 
-
-#education{
-    list-style: none; /*removes bullets*/ 
-    width:875px;
+#navbar , .nav{
+  padding: 1em;
+  text-decoration: none;
 }
 
-#goright{
-    flex:1; /*this when used with the parent rule (display:flex)
-    will make the #goright container fill the screen where the 
-    #education doesnt */ 
-    list-style:none;
-    text-align: right;
-}
-
-
-a:hover{
+#navbar a:hover{
     color:#f6c2e7;
 }
 
-
-a{
-    text-decoration: none; /*this will remove the underline from hyperlinks*/ 
-    color:#8B3D5F;
+.education{
+    display: grid;
+    margin:2rem auto;
+    grid-template-columns: 75% 25%;
+    line-height: 70%;
+    grid-template-rows:25%;
 }
 
-
-.contact{
-    display:inline-block; /*makes this line up next to the other items in a rox */
-    width:33%; 
-    margin:auto;
-    font-size:125%;
+.right{
+    text-align: right;
+    justify-content:flex-end;
 }
+
 
 h1{
 	font-size: 150%;
 	font-weight:bold;
 	text-align:center;
     font-family: 'Cedarville Cursive', cursive;
+    width:auto; /*for some reason, the title was wrapping onto two lines*/ 
 }
 
 h4, h6{
     font-weight: normal; /*lists were showing up bold*/
 }
+
+h2{
+    text-align: left;
+    width:100%;
+    background-color: #f6c2e7;
+    color:#8B3D5F;
+    padding:0.5rem;
+   }
+
+
+.icons{
+    width: 4rem;
+    flex-flow: column;
+}
+
+
+#footer{
+  position:relative;
+  width:100%;
+  margin-top: 5rem;
+  background-color: #f6c2e7;
+  object-fit: contain;
+  }
+
+
+
+.footercontainer{
+  display:block;
+  margin:0 auto;
+  width:15rem;
+}
+
+.footer{
+  object-fit: contain;
+  display: block;
+  margin:auto;
+  width: 100%;
+  margin:0.5rem;
+}
+
+#arrow{
+  height:3rem;
+  padding-top: 1rem;
+}
+
+.icon{
+  width:2rem;
+  margin:auto;
+}
+
+.socialmedia{
+  margin:auto;
+  width:100%;
+  padding-left:2.5rem;
+  padding-bottom: .5rem;
+  display: block;
+}
+
+#footerinfo{
+    color: #f6c2e7;
+    display:inline-block;
+    margin:auto;
+    width:100%;
+    text-align:center;
+    font-family: 'Roboto' , sans-serif;
+    object-fit: contain;
+    padding:0.5rem;
+    background-color: #8B3D5F;
+
+}
+
+#tag{
+  font-size: 0.75rem;
+}
+
+#footerroses{
+  height:3rem;
+  width: auto;
+}
+ /*end footer code*/ 
+@media screen and (min-width: 580px){
+    .linehide{
+        display:none;
+    }
+
+    #logo3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px){
+  
+  #navbar, .nav{
+   background-color:#8B3D5F;
+   color:white; 
+   padding:0;
+   font-size:105%;
+   text-align: center;
+  }
+
+  #logo3{
+    margin:auto;
+    width:25%;
+    padding-top: 1rem;
+    display: block;
+  }
+
+  #navbar{
+    margin-top: 1rem;
+    width: 50%;
+  }
+
+  ul, li, #nav, .nav{
+    display: flex;
+    flex-flow:column;
+    padding:.5rem;
+  }
+   /*responsive menu code starts here*/ 
+    #logo2{
+        display:none;
+    }
+
+    #logo{
+        width:50%;
+        padding-bottom: 0;
+    }
+   
+   h1{
+    font-size: 175%;
+    padding: 1rem 0;
+
+   }
+
+   h2{
+    margin:auto;
+    width:90%;
+    text-align: center;
+    padding-bottom: 1rem;
+   }
+
+   h2{
+    text-align: center;
+    margin:auto;
+    width:95%;
+    background-color: #f6c2e7;
+    color:#8B3D5F;
+    padding:1rem;
+   }
+
+   .education{
+    display: grid;
+    margin:1.5rem auto;
+    grid-template-columns: 70% 30%;
+    line-height: 95%;
+    grid-template-rows:25%;
+}
+
+   main{
+    width:95%;
+    margin:auto;
+   }
+   /*menu media query ends*/
+
+   /*footer media query starts here*/ 
+
+   .socialmedia{
+    max-width: 100%;
+   }
+
+   .icon{
+    width:3rem;
+   }
+
+   #arrow{
+    height:3.5rem
+   }
+   /*end footer media query*/
+}
+
 

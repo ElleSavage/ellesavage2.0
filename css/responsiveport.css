@@ -1,3 +1,9 @@
+/*NOTES:
+Dark purple color:#8B3D5F;  
+Light pink color: #f6c2e7;
+font-families: 'Rochester';
+*/
+
 
 *{
 box-sizing: border-box;
@@ -9,16 +15,12 @@ html{
 
 
 h1{
-    font-size: 200%%;
+    font-size: 200%;
     font-weight:bold;
     text-align:center;
     font-family: 'Rochester', cursive;
 }
 
-#portfolio{
-	display:flex;
-	flex-flow: row-wrap;
-}
 
 #logo{
     margin: auto;
@@ -28,33 +30,32 @@ h1{
     display: block;
 }
 
-
-
-
 #portfolio{
-	margin:auto;
-	display:flex;
-	flex-wrap: wrap;
-	flex-flow: column-wrap;
-  overflow: none;
-  justify-content: space-between;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  width:100%;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-.container{
-  flex:1;
-  padding:0.5rem;
-  display: flex;
-  flex-grow:1;
-  flex-wrap: wrap;
-}
 
 .image{
   justify-content: space-between;
+  width:100%;
+  display: block
+}
+
+.container {
+    position: relative;
+    display: block;
 }
 
 /*begin responsive menu code */ 
 
-#navbar, ul,li,a{
+#navbar, ul,li, .nav{
    display: flex;
    flex-flow:row;
     color:#8B3D5F;
@@ -72,7 +73,7 @@ h1{
 	width:100%;
 }
 
-#navbar a{
+#navbar, .nav{
   padding: 1em;
   text-decoration: none;
 }
@@ -83,49 +84,8 @@ h1{
 
 /*end responsive menu code */ 
 
-.container {
-    position: relative;
-    width: 50%;
-    display:flex;
-    flex-flow:row;
-}
-/*animation for image overlay starts here*/ 
-.image {
-  opacity: 1;
-  display: flex;
-  flex-flow:row-wrap;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  border: 0.1rem solid #8B3D5F;
-}
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #8B3D5F;
-  color: white;
-  font-size: 100%;
-  padding: 1rem 2rem;
-}
-
-/*animation for overlay code ends here */ 
 
 /*working footer code starts here!*/ 
 
@@ -135,7 +95,6 @@ h1{
   background-color: #f6c2e7;
   object-fit: contain;
   }
-
 
 
 .footercontainer{
@@ -148,7 +107,7 @@ h1{
   object-fit: contain;
   display: block;
   margin:auto;
-  width: 100vw;
+  width: 100%;
   margin:0.5rem;
 }
 
@@ -164,7 +123,7 @@ h1{
 
 .socialmedia{
   margin:auto;
-  width:100vw;
+  width:100%;
   padding-left:2.5rem;
   padding-bottom: .5rem;
   display: block;
@@ -174,7 +133,7 @@ h1{
     color: #f6c2e7;
     display:inline-block;
     margin:auto;
-    width:100vw;
+    width:100%;
     text-align:center;
     font-family: 'Roboto' , sans-serif;
     object-fit: contain;
@@ -194,8 +153,98 @@ h1{
 
 /*footer code ends here */ 
 
-@media screen and (max-width:580px) {
+@media screen and (min-width: 680px){
+    .linehide{
+        display:none;
+    }
+
+    #logo3{
+        display: none;
+    }
+
+    .hiddentext{
+      display:none;
+    }
+
+    hr{
+      display: none;
+    }
+
+    /*animation for image overlay starts here*/ 
+.image {
+  opacity: 1;
+  display: flex;
+  flex-flow:row;
+  flex-wrap:wrap;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 0.1rem solid #8B3D5F;
+}
+
+.hovertext {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.campaign:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .hovertext {
+  opacity: 1;
+}
+
+.campaign:hover .hovertext {
+  opacity: 1;
+}
+
+.text {
+  background-color: #8B3D5F;
+  color: white;
+  font-size: 100%;
+  padding: 1rem 2rem;
+}
+
+/*animation for overlay code ends here */ 
+}
+
+@media screen and (max-width:680px) {
     /*responsive menu code starts here*/ 
+    #navbar, .nav{
+   background-color:#8B3D5F;
+   color:white; 
+   padding:0.45rem;
+   font-size:105%;
+  }
+
+  #logo3{
+    margin:auto;
+    width:25%;
+    padding-top: 1rem;
+    display: block;
+  }
+
+  #navbar{
+    margin-top: 1rem;
+    width: 55%;
+  }
+
+  ul, li, #nav{
+    display: flex;
+    flex-flow:column;
+    padding:.5rem;
+  }
+    
     #logo2{
         display:none;
     }
@@ -204,23 +253,60 @@ h1{
         width:50%;
         padding-bottom: 0;
     }
-   
-   h1{
-    font-size: 175%;
-   }
    /*menu media query ends*/
 
    /*footer media query starts here*/ 
 
-   .icon{
+     .icon,.nav{
     width:4rem;
    }
 
+
+    .hovertext {
+    display:none;
+    }
+
+    #footer{
+      margin-top: 2rem;
+    }
+
    #arrow{
     height:3.5rem
+
    }
    /*end footer media query*/
+
+   
+   .hiddentext{
+    font-family: 'roboto', sans-serif;
+    background-color:#8B3D5F;
+    color:white;
+    padding:0.75rem;
+   }
+  
+
+   .container{
+  padding:0.5rem;
+  margin:auto;
+  width:100%;
+  flex-flow: wrap;
 }
+
+
+   .hiddentext{
+    width: 95%;
+    display:block;
+    text-align:center;
+    margin:auto;
+   }
+
+.images{
+  max-width: 95%;
+  display: block;
+}
+
+
+ }
 
 
  /* have to move media queries to end so that the noraml css
