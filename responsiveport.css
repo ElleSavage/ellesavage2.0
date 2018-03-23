@@ -21,11 +21,6 @@ h1{
     font-family: 'Rochester', cursive;
 }
 
-#portfolio{
-	display:flex;
-	flex-flow: row;
-  flex-wrap: wrap;
-}
 
 #logo{
     margin: auto;
@@ -35,28 +30,27 @@ h1{
     display: block;
 }
 
-
 #portfolio{
-	margin:auto;
-	display:flex;
-	flex-wrap: wrap;
-	flex-flow: column;
-  flex-wrap:wrap;
-  overflow: hidden;
-  justify-content: space-between;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  width:100%;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-.container{
-  flex:1;
-  padding:0.5rem;
-  display: flex;
-  flex-grow:1;
-  flex-wrap: wrap;
-  max-width: 100%
-}
 
 .image{
   justify-content: space-between;
+  width:100%;
+  display: block
+}
+
+.container {
+    position: relative;
+    display: block;
 }
 
 /*begin responsive menu code */ 
@@ -90,12 +84,7 @@ h1{
 
 /*end responsive menu code */ 
 
-.container {
-    position: relative;
-    width: 50%;
-    display:flex;
-    flex-flow:row;
-}
+
 
 
 /*working footer code starts here!*/ 
@@ -106,7 +95,6 @@ h1{
   background-color: #f6c2e7;
   object-fit: contain;
   }
-
 
 
 .footercontainer{
@@ -165,7 +153,7 @@ h1{
 
 /*footer code ends here */ 
 
-@media screen and (min-width: 580px){
+@media screen and (min-width: 680px){
     .linehide{
         display:none;
     }
@@ -200,7 +188,7 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  
   text-align: center;
 }
 
@@ -208,7 +196,15 @@ h1{
   opacity: 0.3;
 }
 
+.campaign:hover .image {
+  opacity: 0.3;
+}
+
 .container:hover .hovertext {
+  opacity: 1;
+}
+
+.campaign:hover .hovertext {
   opacity: 1;
 }
 
@@ -222,7 +218,7 @@ h1{
 /*animation for overlay code ends here */ 
 }
 
-@media screen and (max-width:580px) {
+@media screen and (max-width:680px) {
     /*responsive menu code starts here*/ 
     #navbar, .nav{
    background-color:#8B3D5F;
@@ -291,22 +287,22 @@ h1{
 
    .container{
   padding:0.5rem;
-
   margin:auto;
-  max-width:100%;
+  width:100%;
   flex-flow: wrap;
 }
 
 
    .hiddentext{
-    
     width: 95%;
+    display:block;
     text-align:center;
     margin:auto;
    }
 
 .images{
   max-width: 95%;
+  display: block;
 }
 
 
