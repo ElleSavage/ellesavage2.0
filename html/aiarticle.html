@@ -7,32 +7,50 @@
   <meta charset='UTF-8'> 
   <title>Elle Savage's Blog</title>
 
-  <link rel='stylesheet' href='articlestyle.css'>
+  <link rel='stylesheet' href='../css/articlestyle.css'>
  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rochester'> 
 
 </head>
 
 <body>
 
-<img src='savlogo.png' alt='Savage cursive logo' id='logo'>
+<!--beginning of nav code-->
+<img src='../images/savlogo.png' alt='Savage cursive logo' id='logo'>
 
-	<div id='navbar'> 
-		<nav> 
-			<ul>
-				<li> <a href='aboutme.html'> About Me </a> </li>
-				<li> <a href='resume.html'> My Resume </a> </li>
-				<li> <img src='images/logo2.png' alt='flowers computer mouse and paint brush'></li>
-				<li> <a href='portfolio.html'> Portfolio </a> </li>
-				<li><a href='blog.html'> Blog </a> </li>
+<div id='navbar'> 
+			<nav> 
+			<ul id=nav>
+				<li class='nav'> <a href='aboutme.html' class='nav'> About Me </a> </li>
+
+					<hr width='70%' align='center' color='#f6c2e7' noshade class='linehide'>
+
+				<li class='nav'> <a href='resume.html' class='nav'> My Resume </a> </li>
+
+						<hr width='70%' align='center' color='#f6c2e7' noshade class='linehide'>
+
+				<li class='nav'> <img src='../images/logo2.png' alt='flowers computer mouse and paint brush' id='logo2'></li>
+
+					
+
+				<li class='nav'> <a href='responsive-portfolio.html' class='nav'> Portfolio </a> </li>
+
+						<hr width='70%' align='center' color='#f6c2e7' noshade class='linehide'>
+
+				<li class='nav'><a href='blog.html' class='nav'> Blog </a> </li>
+						<hr width='70%' align='center' color='#f6c2e7' noshade class='linehide'>
 			</ul>
 		</nav>
 	</div>
+
+	<img src='../images/logo2.png' alt='flowers computer mouse and paint brush' id='logo3'>
+
+	<!--this code should be the same on each page for nav bar-->
 
 	<h1>The Future of Artificial Intelligence</h1>
 
 	<main>
 		
-		<img src='images/aipost.jpg' alt='Artificial Intelligence image' class='headerpic'>
+		<img src='../images/aipost.jpg' alt='Artificial Intelligence image' class='headerpic'>
 
 <h2 class='headerfont'>Abstract:</h2>
 <p>Artificial intelligence has been a long-time favorite topic of science fiction, making appearances in popular novels and movies dating back to 1950. Though the term “artificial intelligence” was not coined until 1956, the concept was introduced six years early by Alan Turing when he asked, “can machines think?” At this time, computers were only just being introduced to the world, so, self-admittedly, Turing did not have anything to back his curiosity (Sharkey, 2012). Now, over half a century later, the question has shifted; it is no longer “can artificial intelligence exist,” but “when will artificial intelligence become ubiquitous?”</p> 
@@ -145,11 +163,54 @@ Despite the numerous benefits that artificial intelligence can create, it would 
 
 <p>Wilson, J. Daugherty, P., and Morini-Bianzino, N., “The Jobs that Artificial Intelligence Will Create,” MIT Sloan, 23-Mar-2017. [Online]. Available: http://sloanreview.mit.edu/article/will-ai-create-as-many-jobs-as-it-eliminates/. [Accessed: 31 Aug 2017].</p>
 
-<div class='button'>
-	<a href='blog.html' class='goback'> Go Back </a>
-</div>
+<a href='blog.html' class='goback'> Go Back </a>
 
 </main>
+
+<footer id="footer">
+
+	
+	<div class='footercontainer'>
+	<div class='footer'>
+		<img src= '../images/heysocial.png' alt='arrow pointing down' id='arrow'> 
+	</div>
+	</div>
+
+	<div class='footercontainer'>
+		<div class='socialmedia'>
+	
+		<a href='https://www.linkedin.com/in/ellesavage' target='_blank' class='icon'>
+		<img src='../images/linkedin.png' alt='linkedin logo'  class='icon'>
+		</a>
+			<!-- this _blank makes links open in new tabs-->
+
+		
+		<a href='https://www.instagram.com/215ellesavage' target='_blank'>
+		<img src='../images/insta.png' alt='instagram logo' class='icon'> 
+		</a>
+		
+		 <a href='https://www.facebook.com/itsellesavage' target='_blank' > 
+		<img src='../images/facebook.png' alt='facebook logo' class='icon'>
+		</a>
+		
+		</div>
+	</div>
+
+<div class='col'></div>
+
+	<div id=footerinfo>
+
+		<p> <b> "If you're offered a seat on a Rocketship, you don't ask 'which seat?'" -Sheryl Sandberg </b></p>
+
+		<img src='../images/footerroses.png' alt='roses' id='footerroses'>
+
+	<p id='tag'> This site was made with love by Elle Savage using HTML and CSS</p>
+
+	</div>
+
+
+
+</footer>	
 
 
 
