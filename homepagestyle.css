@@ -4,17 +4,15 @@ box-sizing: border-box;
 
 html{
 	font-size: 100%;
-	 background: url(../images/homebg.jpg) no-repeat center center fixed; 
+	 background: linear-gradient(
+      rgba(134, 59, 149, 0.16), 
+      rgba(134, 59, 149, 0.16)
+    ),
+   url(../images/homebg.jpg) no-repeat center center fixed; 
+
   background-size: cover;
 }
 
-ul li a{
-	display: inline-block;
-	padding:1.25rem 2rem; /*this determine the space between 
-	menu items*/ 
-	text-decoration: none;
-}
- 
 
 a{
 	color:white;
@@ -26,76 +24,139 @@ a:hover{
     cursor: pointer;
 }
 
-.welcome{
-	display:flex;
-  align-items: flex-end;
-  flex-direction:column;
-  justify-content: center; /*for some reason,the box still isn't
-  in the middle of the page*/ 
-  margin-top: 40%
-}
-
-
-.mantra{
-	background:#4F2141;
-	font-family: 'Roboto', sans-serif;
-	color:white;
-	font-size:110%;
-	max-width: 28rem;
-	padding: 0.6rem;
+.container{
+  width: 100%; /*must have this width in to make verticle align work!!!*/ 
+   height: auto;
+   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+margin-top: 2%;
+ }
+
+ img.arrow{
+  max-width: 45%;
+  height: auto;
+ transform: rotate(15deg);
+ margin:0;
+ margin-bottom: -10%;
+ }
+
+p.welcome{
+  font-size:600%;
+  color: white;
+  font-family: 'Abril Fatface', sans-serif;
+  margin:0;
+  width: 100%;
+  margin-top: 0;
+
+}
+p.other{
+  width: 100%; /*must have this width in to make verticle align work!!!*/ 
+   height: auto;
+   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+max-width: 40%;
+  font-size:250%;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  margin:0;
+
 }
 
-.button{
-	background:#4F2141;
-	font-family: 'Roboto', sans-serif;
-	font-size:110%;
-	max-width: 15rem;
-	padding: 0.5rem;
-	display:flex;
-	justify-content:center;
-	border:none; /*get rid of the border box around a button*/
-	flex-direction:column;
+.animated-words{
+   font-size:250%;
+      color: #FCC9F7;
+  font-family: 'Work Sans', sans-serif;
+  margin:0;   
+  width: 100%; /*must have this width in to make verticle align work!!!*/ 
+   height: auto;
+   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+margin-top: 2%;
+
 }
+
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #FCC9F7;
+
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+        color: #FCC9F7;
+
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+        color: #FCC9F7;
+
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+        color: #FCC9F7;
+
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+        color: #FCC9F7;
+   
+}
+
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+ 
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
 
 @media screen and (max-width: 580px) { /* Specific to this particular image */
-  .mantra{
-    position:fixed;
-    top:0;
-    max-width:600px;
-    text-align: center;
-    font:150%;
 
-    opacity: 0.8;
-  }
-  	/*have to refresh the page before text wraps and appears 
-  	centered...why??*/ 
+img.arrow{
+  display:none;
+}
 
+.container{
+  max-width: 80%;
+}
 
-  .enter{
-  	position:fixed;
-  	bottom:0;
-    text-align:center;
-    font:250%;
-    width:100%;
-    max-width: 580px;
-  }
+p.other{
+  max-width: 80%
+}
 
-  .button{
-  	width:100%;
-  	padding:1rem 1rem 1rem 2rem;
-  	position:fixed;
-  	bottom:0;
- 	  max-width: 600px;
-  	text-align:center;
- 	  opacity:0.8;
-  }
-
-  /*why is this div not filling the entire screen?*/
-
-  a{
-  	text-align: center;
-  	width:100%;
-  }
-
+p.welcome{
+  max-width: 80%
 }
